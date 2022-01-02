@@ -8,9 +8,9 @@ Bundler.require(*Rails.groups)
 
 module App
   class Application < Rails::Application
+    
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.1
-
+    config.load_defaults 6.1    
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
@@ -18,5 +18,7 @@ module App
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.action_controller.include_all_helpers = false
+
   end
 end
