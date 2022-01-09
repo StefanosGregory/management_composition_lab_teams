@@ -3,7 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 #testing libraries
 gem 'rspec-rails', '~> 3.6'
-gem 'factory_girl_rails'
+gem 'factory_bot_rails'
 gem 'rails-controller-testing'
 gem 'headless'
 gem 'poltergeist'
