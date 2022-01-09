@@ -9,6 +9,8 @@ gem 'headless'
 gem 'poltergeist'
 gem 'database_cleaner'
 
+#gem 'phantomjs', :require => 'phantomjs/poltergeist'
+
 ruby '3.0.2'
 # Devise
 gem 'devise'
