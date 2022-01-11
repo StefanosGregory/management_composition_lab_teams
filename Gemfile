@@ -8,6 +8,7 @@ gem 'rails-controller-testing'
 gem 'headless'
 gem 'poltergeist'
 gem 'database_cleaner'
+gem 'jquery-rails'
 
 #gem 'phantomjs', :require => 'phantomjs/poltergeist'
 
