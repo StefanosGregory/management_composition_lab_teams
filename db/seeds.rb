@@ -58,3 +58,4 @@ def seed_users
   seed_users
   seed_categories
   seed_posts
+  

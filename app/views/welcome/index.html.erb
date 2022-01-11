@@ -5,13 +5,15 @@
     <p class="text-light">Management composition laboratory teams software</p>
   </div>
   <br>
-  <div class="p-2 bg-dark shadow rounded">
-    <div class="row">
-      <div id="side-menu"  class="col-sm-3">
-      </div>
-      <!-- side-menu -->
-      <div id="main-content" class="col-sm-9">
-      </div>
-      <!-- main-content -->
+  <div class="row">
+    <div id="side-menu"  class="col-sm-3">
     </div>
+    <!-- side-menu -->
+    <div id="main-content" class="col-sm-9 card-group">
+      <%= render @posts %>
+    </div>
+    <!-- main-content -->
   </div>
+  <!-- row -->
+</div>
+<!-- container -->
