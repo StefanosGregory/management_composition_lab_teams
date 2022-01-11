@@ -11,7 +11,9 @@ gem 'database_cleaner'
 gem 'jquery-rails'
 
 #gem 'phantomjs', :require => 'phantomjs/poltergeist'
-
+# Faker
+gem 'faker'
+# Ruby
 ruby '3.0.2'
 # Devise
 gem 'devise'
