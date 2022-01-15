@@ -9,6 +9,7 @@ gem 'headless'
 gem 'poltergeist'
 gem 'database_cleaner'
 gem 'jquery-rails'
+gem 'jquery-turbolinks'
 
 #gem 'phantomjs', :require => 'phantomjs/poltergeist'
 gem 'bootstrap-sass', '~> 3.3.6'

@@ -1,3 +1,4 @@
+window.alert("Hi am");
 $(document).on('turbolinks:load', function() {
     if ($(".single-post-card").length) {
         // set a solid background color style
@@ -26,7 +27,7 @@ $(document).on('turbolinks:load', function() {
     });
 
 });
-
+window.alert("Hi am");
 var colorSet = randomColorSet();
 var mode = Math.floor(Math.random() * 2);
 
