@@ -11,6 +11,8 @@ gem 'database_cleaner'
 gem 'jquery-rails'
 
 #gem 'phantomjs', :require => 'phantomjs/poltergeist'
+gem 'bootstrap-sass', '~> 3.3.6'
+gem 'autoprefixer-rails'
 # Faker
 gem 'faker'
 # Ruby
