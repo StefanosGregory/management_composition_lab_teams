@@ -1,4 +1,5 @@
 <title>Welcome</title>
+<%= javascript_pack_tag 'style' %>
 <div class="container">
   <div class="p-2 bg-dark shadow rounded">
     <h1 class="display-1 text-light">Welcome</h1>
@@ -17,3 +18,14 @@
   <!-- row -->
 </div>
 <!-- container -->
+<script>
+  window.onload = function() {
+    if (window.jQuery) {
+        // jQuery is loaded
+        alert("jQuery is loaded");
+    } else {
+        // jQuery is not loaded
+        alert("jQuery is not loaded");
+    }
+  }
+</script>
