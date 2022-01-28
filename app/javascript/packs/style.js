@@ -1,6 +1,4 @@
-alert("JS loaded");
 $(document).on('turbolinks:load', function() {
-    alert("function 1 loaded");
     if ($(".single-post-card").length) {
         // set a solid background color style
         if (mode == 1) {
