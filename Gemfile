@@ -14,6 +14,7 @@ gem 'jquery-turbolinks'
 #gem 'phantomjs', :require => 'phantomjs/poltergeist'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'autoprefixer-rails'
+gem 'will_paginate', '~> 3.3.0'
 # Faker
 gem 'faker'
 # Ruby
