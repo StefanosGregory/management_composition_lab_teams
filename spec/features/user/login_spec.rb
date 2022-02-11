@@ -7,11 +7,10 @@ RSpec.feature "Login", :type => :feature do
     user
     visit root_path
     find('nav a', text: 'Login').click
-    find('nav a', text: 'LabTeams').click
     fill_in 'user[email]', with: user.email
     fill_in 'user[password]', with: user.password
-    find_button('Log in').click
-    #expect(page).to have_selector('#user-settings')
+    find('.login-button').click
+    expect(page).to have_selector('#user-settings')
   end
 
 end

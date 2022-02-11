@@ -1,53 +1,28 @@
-<title>Register</title>
-<div class="container p-2 bg-dark shadow rounded p-4 py-4 mb-5 col-xl-4 col-lg-4 col-md-6 col-10 mx-auto">
-  <%# Errors %>
-  <%= render "devise/shared/error_messages", resource: resource %>
-  <h1 class="display-1 text-light">Register</h1>
-  <p class="text-light">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-people-fill d-inline-block align-text-top" viewBox="0 0 16 16">
-      <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-      <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
-      <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-    </svg>
-    Management composition laboratory teams software
-  </p>
-  <%# FORM %>
-  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-    <%# Username %>
-    <div class="field mb-3 row text-light">
-      <%= f.label :name, class: "col-sm-2 col-form-label" %><br />
-      <div class="col-sm-10">
-        <%= f.text_field :name, placeholder: 'username', class: "form-control text-dark" %>
-      </div>
-    </div>
-    <%# Email %>
-    <div class="field mb-3 row text-light">
-      <%= f.label :email, class: "col-12 col-form-label" %>
-      <div class="col-sm-10">
-        <%= f.email_field :email, class: "form-control text-dark",  placeholder: 'email', autocomplete: "email" %>
-      </div>
-    </div>
-    <%# Password %>
-    <div class="field mb-3 row text-light">
-      <%= f.label :password, class: "col-12 col-form-label" %>
-      <% if @minimum_password_length %>
-        <em class="col col-form-label text-muted">(<%= @minimum_password_length %> characters minimum)</em>
+<div class="container" id="sign-up-form">
+  <div class="row">
+    <h1>Get in touch with like-minded people</h1>
+    <h3>Create, study, accomplish goals together</h3>
+
+    <div class="col-sm-offset-4 col-sm-4">
+      <h3>Sign up <small>it's free!</small></h3> 
+
+        <%= bootstrap_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+        <%= f.text_field :name, 
+	                       placeholder: 'username (will be shown publicly)', 
+	                       class: 'form-control' %>
+        <%= f.text_field :email, 
+	                       placeholder: 'email', 
+	                       class: 'form-control' %>
+        <%= f.password_field :password, 
+                              placeholder: 'password', 
+                              class: 'form-control' %>
+        <%= f.password_field :password_confirmation, 
+                              placeholder: 'password confirmation', 
+                              class: 'form-control' %>
+        <%= f.submit 'Sign up', class: 'btn sign-up-button' %>
       <% end %>
-      <div class="col-sm-10">
-        <%= f.password_field :password, class: "form-control text-dark", placeholder: 'password', autocomplete: "new-password" %>
-      </div>
+		
     </div>
-    <%# Password Confirmation%>
-    <div class="field mb-3 row text-light">
-      <%= f.label :password_confirmation, class: "col col-form-label" %>
-      <div class="col-sm-10">
-        <%= f.password_field :password_confirmation, class: "form-control text-dark", placeholder: 'password confirmation', autocomplete: "new-password" %>
-      </div>
-    </div>
-    <%# Register button%>
-    <div class="actions col-sm-2 pb-2">
-      <%= f.submit "Sign up", class: 'form-control btn btn-primary' %>
-    </div>
-  <% end %>
-  <%= render "devise/shared/links" %>
+  </div>
 </div>
